@@ -2,9 +2,9 @@ const themeSwitch = document.querySelector("#switch");
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
 
-const keySound = new Audio("../assets/key-press.mp3");
-const clearSound = new Audio("../assets/clear-button.mp3");
-const switchSound = new Audio("../assets/switch-button.mp3");
+const keySound = new Audio("./assets/key-press.mp3");
+const clearSound = new Audio("./assets/clear-button.mp3");
+const switchSound = new Audio("./assets/switch-button.mp3");
 
 let expression = "0";
 
