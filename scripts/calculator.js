@@ -1,9 +1,15 @@
 const themeSwitch = document.querySelector("#switch");
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
+
+const keySound = new Audio("../assets/key-press.mp3");
+const clearSound = new Audio("../assets/clear-button.mp3");
+const switchSound = new Audio("../assets/switch-button.mp3");
+
 let expression = "0";
 
 themeSwitch.addEventListener("click", () => {
+  switchSound.play();
   if (document.body.classList.contains("theme-casio")) {
     document.body.classList.remove("theme-casio");
     document.body.classList.add("theme-retro");
@@ -22,6 +28,13 @@ buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const value = button.textContent;
     const lastChar = expression.slice(-1);
+
+    if (
+      button.classList.contains("clear") ||
+      button.classList.contains("equals")
+    ) {
+      clearSound.play();
+    }
 
     // Clear
     if (button.classList.contains("clear")) {
@@ -45,6 +58,8 @@ buttons.forEach((button) => {
       updateDisplay();
       return;
     }
+
+    keySound.play();
 
     // Handle operator input rules
     if (
