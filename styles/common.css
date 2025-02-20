@@ -87,6 +87,7 @@ label:active:after {
   font-family: "Digital-7 Italic";
   font-size: 56px;
   overflow: hidden;
+  font-variant-numeric: tabular-nums;
 }
 
 button {
