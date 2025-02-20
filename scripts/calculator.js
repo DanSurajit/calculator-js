@@ -1,6 +1,17 @@
+const themeSwitch = document.querySelector("#switch");
 const display = document.querySelector(".display");
 const buttons = document.querySelectorAll("button");
 let expression = "0";
+
+themeSwitch.addEventListener("click", () => {
+  if (document.body.classList.contains("theme-casio")) {
+    document.body.classList.remove("theme-casio");
+    document.body.classList.add("theme-retro");
+  } else {
+    document.body.classList.remove("theme-retro");
+    document.body.classList.add("theme-casio");
+  }
+});
 
 function getCharacterCount(char) {
   const expressionArray = expression.split("");

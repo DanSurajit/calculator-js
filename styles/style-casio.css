@@ -1,0 +1,80 @@
+.theme-casio .calculator {
+  background: linear-gradient(145deg, #d3d3d3, #c0c0c0);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2),
+    inset 0 2px 5px rgba(255, 255, 255, 0.3);
+  border: 2px solid #999;
+  position: relative;
+}
+
+.theme-casio .display {
+  background: #000;
+  box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5),
+    inset -1px -1px 2px rgba(255, 255, 255, 0.1);
+  color: #0f0;
+  border: 2px solid #666;
+  overflow: hidden;
+  text-shadow: 0 0 2px rgba(0, 255, 0, 0.5);
+}
+
+.theme-casio .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.theme-casio button {
+  cursor: pointer;
+  background: #2a2a2a;
+  color: white;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.1s;
+}
+
+.theme-casio button:hover {
+  background: #3a3a3a;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+.theme-casio button:active {
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4),
+    inset -1px -1px 1px rgba(255, 255, 255, 0.1);
+  transform: translateY(1px);
+}
+
+.theme-casio .function {
+  background: #2a2a2a;
+}
+
+.theme-casio .function:hover {
+  background: #3a3a3a;
+}
+
+.theme-casio .operator {
+  background: #2a2a2a;
+}
+
+.theme-casio .operator:hover {
+  background: #3a3a3a;
+}
+
+.theme-casio .equals {
+  background: #2a2a2a;
+}
+
+.theme-casio .equals:hover {
+  background: #3a3a3a;
+}
+
+.theme-casio .clear {
+  background: #c0392b;
+}
+
+.theme-casio .clear:hover {
+  background: #e74c3c;
+}
+
+.theme-casio .zero {
+  grid-column: span 2;
+}
